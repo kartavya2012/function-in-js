@@ -1,15 +1,21 @@
 <html>
 
 <head>
-    <title>Intro to Js</title>
+    <title>Functions in Js(Homework)</title>
 </head>
 
 <body>
-    <h1 id="name"> </h1>
-    <p id="age"></p>
+    <buton onclick="multiply(4)">Click Me!</buton>
+    <p id="result"></p>
     <script>
-        document.getElementById("name").innerHTML = "Kartavya";
-        document.getElementById("age").innerHTML = 13;
+
+        function multiply(a, b) {
+            if (b === undefined) {
+                alert("The value of b is undefined")
+                b = 5;
+            }
+            var result = a * b;
+        }
     </script>
 </body>
 
